@@ -231,3 +231,31 @@
         width: 15rem;
     }
 }
+/* contact */
+.contact{
+    background: url("../img/home/12.jpg") center/cover no-repeat;
+    padding: 5rem;
+    min-height: 60vh;
+}
+.contact-text{
+    color: var(--colorWhite);
+}
+.contact-title span{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0 ,.5);
+}
+.btn-contact{
+    color: var(--colorText);
+    border: 0.1rem solid var(--colorText-2);
+}
+.btn-contact:hover{
+    color: var(--colorWhite);
+    background: var(--colorText-2);
+}
+.input-contact{
+    border: 0.2rem solid var(--colorText-2);
+    background: var(--colorBlack-1);
+    border-radius: 5px;
+    color: var(--colorWhite);
+}
+/* end of contact */
