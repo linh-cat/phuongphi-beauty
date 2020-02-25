@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda:700&display=swap');
+:root{
+    --colorText: rgb(232, 210, 184); 
+    --colorText-1: rgb(233, 196, 155); 
+    --colorText-2: rgb(247, 197, 140);
+    --colorBlack: rgb(51, 51, 51);
+    --colorBlack-1: rgba(0, 0, 0, .1);
+    --colorWhite: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif
+}
+/* header */
+.header{
+    position: relative;
+}
+.header-img{
+    position: absolute;
+    top: 90%;
+    left: 20%;
+}
+/* end of header */
+/* nav bar */
+.navbar{
+    background: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0 ,.1) );
+}
+.nav-link{
+    color: var(--colorWhite);
+    letter-spacing: 1px;
+    transition: all .5s linear;
+}
+.nav-link:hover{
+    color: var(--colorText);
+    border-top: 0.01rem solid var(--colorText);
+    border-bottom: 0.01rem solid var(--colorText);
+
+}
+.nav-item{
+    margin: 0.3rem;
+}
+.dropdown-menu{
+    background: var(--colorBlack-1);
+}
+.dropdown-item{
+    color: var(--colorWhite);
+    letter-spacing: 0.01rem;
+    transition: all .5s ease;
+}
+.dropdown-item:hover{
+    background: var(--colorText);
+}
+.dropdown-item:active{
+    color: var(--colorWhite);
+    background-color: var(--colorText);
+}
+.w-100{
+    height: 100vh;
+}
+@media only screen and (max-width: 768px){
+    .navbar-nav.ml-auto{
+        background-color: var(--colorText);
+        padding: 20px;
+    }
+    .navbar-toggler{
+        background: var(--colorText);
+        padding: 3px 5px;
+        font-size: 1.8rem;
+        line-height: 0.3;
+    }
+}
+@media only screen and (max-width: 995px){
+    .navbar-nav.ml-auto{
+        background-color: var(--colorText);
+        padding: 20px;
+    }
+}
+.icon-cart{
+    border-left: 0.01rem solid white;
+}
+.icon-search{
+    border-left: 0.01rem solid white;
+
+}
+/* end navbar */
+/* banner */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center cover scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/* .carousel-caption{
+    bottom: 10rem;
+} */
+.carousel-caption .banner-title{
+    letter-spacing: 0.5rem;
+}
+.carousel-caption .banner-price{
+    letter-spacing: 0.5rem;
+}
+.banner-button{
+    padding: 0.5rem 1rem;
+    background: none;
+    color: var(--colorText);
+    border: 0.1rem solid var(--colorText);
+}
+.banner-button:hover{
+    background-color: var(--colorText);
+    color: var(--colorBlack);
+}
+.carousel-caption {
+    bottom: 15rem;
+}
+
+@media screen and (max-width: 768px){
+    .carousel-caption{
+        bottom: 10rem;
+    }
+}
+/* end of banner */
+/* about */
+.about-history{
+    background: rgba(245, 242, 243, 0.87)
+}
+.about-title__front{
+    letter-spacing: 0.5rem;
+}
+.about-title__end{
+    font-size: 1.5rem;
+}
+.btn-about{
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    background: var(--colorText-1);
+    border: 0.2rem solid var(--colorText-1);
+    color: black;
+    transition: all .2s linear;
+    position: relative;
+}
+.btn-about:hover{
+    background: none;
+}
+/* end about */
+/* section img */
+.section-img{
+    width: 100%;
+    height: 30rem;
+    background: url("../img/home/section-img/section-img-1.jpg") left/cover no-repeat fixed;
+    position: relative;
+}
+.section-title{
+    font-size: 5rem;
+    color: var(--colorWhite);
+    letter-spacing: 0.8rem;
+    position: absolute;
+    left: -15%;
+    top: 150px;
+    font-family: 'Merienda', sans-serif;
+}
+@media screen and (max-width: 768px){
+    .section-title{
+        position: absolute;
+        top: 70%;
+        left: 20%;
+    }
+}
+.section-title::before{
+    content: "";
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transition: all 1s ease;
+}
+@keyframes animate{
+    0%{content: "chất lượng"; }
+    25%{content: "an toàn";}
+    50%{content: "uy tín";}
+    75%{content: "tận tâm";}
+    100%{content: "chuyên nghiệp";}
+
+}
+/* end section img */
+/* service */
+.service-title__first{
+    letter-spacing: 1rem;
+    font-size: 2rem;
+}
+.btn-card{
+    background: var(--colorText-1);
+}
+.btn-card:hover{
+    color: var(--colorText-2);
+    background: var(--colorWhite);
+}
+.card-img-top{
+    height: 15rem;
+}
+/* end service */
+.full-screen-bg-left{
+    background: url("../img/home/sectiion-2/bg-1.jpg") center/cover no-repeat;
+    padding: 4rem;
+}
+.full-screen-bg-right{
+    background: url("../img/home/bg-video.jpg");
+}
+.container-left{
+    margin-top: 3rem;
+}
+.btn-container-left{
+    padding: .5rem .5rem;
+    background: var(--colorBlack-1);
+    transition: all .3s ease;
+}
+.btn-container-left:hover{
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+.container-left-title{
+    color: var(--colorWhite);
+}
+.video__container{
+    padding: 5rem;
+}
+@media screen and (max-width: 768px){
+    .video__items{
+        width: 15rem;
+    }
+}
