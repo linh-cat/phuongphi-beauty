@@ -207,6 +207,14 @@ nav .black{
 .card-img-top{
     height: 15rem;
 }
+.card{
+    overflow: hidden;
+}
+.card:hover img{
+    overflow: hidden;
+    transition: all 1s linear;
+    transform: scale(1.1);
+}
 /* end service */
 /* video */
 .full-screen-bg-left{
@@ -242,7 +250,7 @@ nav .black{
 /* end video */
 /* contact */
 .contact{
-    background: url("../img/home/12.jpg") center/cover no-repeat;
+    background: url("../img/home/12.jpg") center/cover no-repeat fixed;
     padding: 5rem;
     min-height: 60vh;
 }
@@ -298,3 +306,31 @@ nav .black{
     }
 }
 /* end of contact */
+/* footer */
+.footer{
+    background: rgb(0, 0, 0, .9);
+}
+.container-footer{
+    color: white;
+}
+.footer-title{
+    margin-top: 3rem;
+    letter-spacing: 0.5rem;
+
+}
+.footer-adress{
+    font-size: 1rem ;
+}
+.footer-email{
+    font-size: 1rem;
+}
+.footer-email:hover{
+    text-decoration: underline;
+}
+.footer-email a{
+    color: var(--colorText-2);
+}
+.footer-end{
+    color: var(--colorWhite);
+}
+/* end footer */
