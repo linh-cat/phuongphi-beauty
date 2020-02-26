@@ -24,13 +24,17 @@
 }
 /* end of header */
 /* nav bar */
-.navbar{
+/* .navbar{
     background: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0 ,.1) );
-}
+} */
 .nav-link{
     color: var(--colorWhite);
     letter-spacing: 1px;
     transition: all .5s linear;
+}
+.black{
+    background: var(--colorBlack);
+    transition: all 1s linear;
 }
 .nav-link:hover{
     color: var(--colorText);
@@ -40,6 +44,9 @@
 }
 .nav-item{
     margin: 0.3rem;
+}
+nav .black{
+    background: black;
 }
 .dropdown-menu{
     background: var(--colorBlack-1);
@@ -201,6 +208,7 @@
     height: 15rem;
 }
 /* end service */
+/* video */
 .full-screen-bg-left{
     background: url("../img/home/sectiion-2/bg-1.jpg") center/cover no-repeat;
     padding: 4rem;
@@ -226,11 +234,12 @@
 .video__container{
     padding: 5rem;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1400px){
     .video__items{
         width: 15rem;
     }
 }
+/* end video */
 /* contact */
 .contact{
     background: url("../img/home/12.jpg") center/cover no-repeat;
@@ -257,5 +266,35 @@
     background: var(--colorBlack-1);
     border-radius: 5px;
     color: var(--colorWhite);
+}
+.social-icon{
+    width: 4rem;
+    height: 3rem;
+    margin: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    background: var(--colorBlack-1);
+    border: 0.1rem solid var(--colorText-2);
+    transition: all .5s linear;
+}
+.social-icon a i{
+    line-height: 3rem;
+    color: var(--colorText-2);
+}
+.social-icon:hover{
+    background: var(--colorText-2);
+}
+.social-icon a i:hover{
+    color: var(--colorBlack);
+}
+.social-icon:hover a i{
+    color: var(--colorBlack);
+}
+@media screen and (max-width: 768px){
+    .social-icon{
+        display: block;
+        width: 100%;
+
+    }
 }
 /* end of contact */
